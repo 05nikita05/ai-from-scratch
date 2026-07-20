@@ -24,8 +24,8 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"]) #configure the SDK with th
 # print(ModelService.list_models()) #modelService.list_models() lists all the available models in the Gemini API
 model = genai.GenerativeModel("gemini-3.5-flash") #gemini-3.5-flash is the model we are using for generating content
 # response = model.generate_content("What is a neural network in one sentence?")
-response = model.generate_content("From SAP associate consultant role, can I get a job at Google if I learn AI and ML? And what things i need to learn to reach there in how much time? write it in within 10lines")
-
+# response = model.generate_content("From SAP associate consultant role, can I get a job at Google if I learn AI and ML? And what things i need to learn to reach there in how much time? write it in within 10lines")
+response = model.generate_content("What you know about CJP? tell me in 5lines")
 print(response.text)
 
 # #1. **Core Coding & Math:** Master Python, Data Structures & Algorithms (DSA), Linear Algebra, and Statistics.
